@@ -1,14 +1,17 @@
 {
-  "extends": "ts-node/node12/tsconfig.json",
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "compilerOptions": {
-
-    }
-  },
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es2020"
-  }
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
 }
